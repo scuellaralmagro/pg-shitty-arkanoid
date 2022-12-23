@@ -106,7 +106,7 @@ class Ball:
                 if self.position[1] + self.size[1] > bar.position[1]:
                     self.position[1] = bar.position[1] - self.size[1]
                     offset = self.position[0] - (bar.position[0] + bar.size[0] / 2)     # ALTERS X-AXIS SPEED DEPENDING ON WHERE THE BALL HITS ON THE BAR.
-                    self.velocity[0] = offset * 0.3
+                    self.velocity[0] = offset * 0.2
                     self.velocity[1] *= -1
 
         # UPDATES RECT COORDINATES TO GO ALONG WITH BALL OBJECT.            
